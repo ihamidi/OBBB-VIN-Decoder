@@ -1,0 +1,90 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs #
+########
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories #
+#########################
+# JavaScript / Node.js
+node_modules/
+jspm_packages/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+# Other
+vendor/
+bower_components/
+
+# Build outputs #
+################
+# Vite
+dist/
+build/
+# Firebase
+# (Note: we commit firebase.json and .firebaserc as they are config)
+# But ignore any Firebase emulators data if used
+.emulator/
+
+# IDEs and editors #
+###################
+# VS Code
+.vscode/
+# JetBrains
+.idea/
+*.swp
+*~
+# NetBeans
+nbproject/private/
+# macOS
+.AppleDouble
+.LSOverride
+
+# Package files #
+################
+# It's better to ignore these files and commit the lockfiles instead
+# package.json and lockfiles are usually committed, but ignoring here as example
+# Actually for npm, we DO commit package.json and package-lock.json
+# So commenting this out:
+# npm-debug.log*
+# Docs say: "It is recommended to commit lockfiles to source control:"
+#   - npm: package-lock.json
+#   - yarn: yarn.lock
+#   - pnpm: pnpm-lock.yaml
+
+# Misc #
+########
+# Temporary files from our processing
+temp/
+# Backup files
+*.bak
+*.backup
+# If we generate static data artifacts outside of source control
+# But note: we decided to commit the small static dataset (~4MB)
+# so we would NOT ignore:
+#   data/processed/vin-data.json.gz
+# However, if we have large intermediate files:
+data/raw/
+data/processing/
+# Environment variables (good practice even if not used)
+.env
+.env.*
+# Secrets
+*.secrets.toml
+# NHTSA specific - the massive SQL download
+vPICList_lite_*.sql
+vPICList_lite_*.zip
+# Python cache for scripts
+scripts/__pycache__/
